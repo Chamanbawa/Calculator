@@ -1,0 +1,131 @@
+@import './reset.css';
+
+:root {
+    --app-dark-bg: #1a1d28;
+    --app-red: #ff3c57;
+    --app-green: #33ab4e;
+    --app-purple: #833cff;
+    --app-orange: #ff833c;
+    --app-blue: #3c57ff;
+    --app-blue-hover: #364ee6;
+    --app-light-orange: #FE9505;
+}
+
+body {
+    background-color: rgb(180, 179, 179);
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+   
+}
+.center{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+input[type="button"] {
+    width: 120px;
+    height: 48px;
+    text-align: center;
+    background-color: var(--app-blue);
+    border: 1px solid var(--app-blue);
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    transition: all 0.25s ease-in-out;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+
+.calculator {
+    width: 300px;
+    height: 457px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+.result,
+.input {
+    background-color: var(--app-dark-bg);
+    height: 75px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    text-align: right;
+
+}
+
+.numbers {
+    height: 350px;
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+
+.buttons {
+    display: flex;
+}
+
+.clear,
+.divide {
+    line-height: 60px;
+    bottom: 60px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: var(--app-dark-bg);
+    color: #fff;
+
+}
+
+.number {
+    line-height: 60px;
+    width: 240px;
+    bottom: 60px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: var(--app-dark-bg);
+    color: #fff;
+    margin-top: 2px;
+    height: 62px;
+
+}
+
+.number:hover {
+    background-color: rgba(134, 133, 131, 0.1);
+}
+.number+.number {
+    margin-left: 2px;
+}
+
+.math {
+    line-height: 60px;
+    bottom: 60px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: var(--app-light-orange);
+    margin-left: 2px;
+    color: #fff;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+.math:hover{
+    background-color: #a5650b;
+}
+.equal,
+.dot {
+    width: calc(100% - 55%);
+}
+
+.divide {
+    margin-left: 2px;
+    width: calc(100% - 70%);
+}
